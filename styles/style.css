@@ -1,0 +1,162 @@
+/* theme colors */
+:root {
+    --primary: #FBF9D8;
+    --secondary: #E1CCAD;
+    --contrast: #130C06;
+    --header: #416323;
+    --text: #987B3D;
+}
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+
+html {
+    font-family: 'Libre Baskerville', serif;
+    background-color: var(--primary);
+  }
+
+/* header / navbar */
+.head-center{
+    display:flex;
+    justify-content: center;
+    z-index: -20;
+}
+
+.head-center>h1{
+    font-size: 3rem;
+    color: var(--text);
+    margin: 10px;
+}
+
+.head-center>h2{
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin: 8px;
+}
+ 
+/* carousel styles */
+.slides{
+    animation: slideentry 1s 1;
+}
+.carousel-pos{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    margin-top:-50px;
+    opacity: 1 !important;
+}
+
+.carousel-pos>button{
+    margin:10px;
+    opacity: 1 !important;
+}
+.dot{
+    border-radius: 50%;
+    width:1.5rem;
+    height:1.5rem;
+    background-color: var(--secondary);
+    border-color: var(--header);
+}
+
+.arrows{
+    background-color: transparent;
+    font-size: 1.3rem;
+    border: none;
+    color: var(--primary);
+}
+.filled-dot{
+    background-color: var(--header);
+
+}
+
+/* urbex section */
+
+#urban-title{
+    padding: 0;
+}
+
+.bg-secondary{
+    background-color: var(--header);
+}
+.bg-contrast{
+    background-color: var(--contrast);
+}
+
+.hero-img{
+    width: 100%;
+    height: 60vh;
+}
+
+.hero-img>img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+/* about section */
+
+  .about-wrapper{
+    width:100%;
+    display:flex;
+    justify-content:center;
+  }
+  .about-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:65vw;
+    color: var(--contrast);
+    font-size: 1.2rem;
+}
+
+/* task list */
+
+.container-tasks{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#newtask>button{
+    width:7rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: var(--secondary);
+}
+#newtask>input{
+    margin-right: 3rem;
+    width:21rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: var(--primary);
+    text-align:center;
+}
+
+.current-tasks-wrapper{
+    margin-top: 2rem;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 2rem;
+}
+.current-tasks{
+    display:block;
+    text-align:center;
+}
+
+.delete{
+    width:30px;
+    height:30px;
+    padding-top: 10px;
+    text-align:center;
+
+}
+
+@keyframes slideentry {
+    0% {
+        margin-left: -100%;}
+    100% { }
+  }

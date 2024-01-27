@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Introduction to Urban Exploration">
+    <meta name="keywords" content="UrbEx, Urban Exploration, Explore, Architecture">
+    <meta name="author" content="Tahmid Washy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbEx - TW</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="images/logo.avif">
+  </head>
+
+  <body>
+    <div class='head-center bg-secondary' id = 'urban-title'>
+        <h1>URBAN EXPLORATION</h1>
+    </div>
+    <div class='head-center bg-contrast' id = 'urban-subtitle'>
+        <h2>A DS4200 Project |  Tahmid Washy</h1>
+    </div>
+    <div class ='hero-img'>
+
+        <img class = 'slides' src = 'images/banner.jpg'>
+        <img class = 'slides' src = 'images/urbex2.jpg'>
+        <img class = 'slides' src = 'images/urbex3.jpg'>
+        <div class = 'carousel-pos'>
+
+            <button class="arrows" onclick="plusDivs(-1)">&#10094; </button>
+            <button class="dot" onclick="currentDiv(1)"></button>
+            <button class=" dot" onclick="currentDiv(2)"></button>
+            <button class=" dot" onclick="currentDiv(3)"></button>
+            <button class="arrows" onclick="plusDivs(1)"> &#10095;</button>
+        </div>
+        
+
+    </div>
+
+    <div class='head-center' id = 'about-title'>
+        <h1 style = 'margin-top:60px'>ABOUT</h1>
+    </div>
+    <div class = 'about-wrapper'>
+    <div class = 'about-div'>
+        <p> Hi My name is Tahmid Washy. I am currently a second-year Data Science and Mathematics major at Northeastern University. This website will be about a new emerging hobby
+            that I take great interest in, Urban Exploration.Urban Exploration, often referred to by the shorthand UrbEx ur UE, is a growing phenomenon of individuals exploring, documenting, 
+            and discovering manmade structures, usually abandoned or unoccupied facilities, 
+        </p>
+    </div>
+</div>
+<div class='head-center' id = 'about-title'>
+    <h1 style = 'margin-top:60px'>FUTURE TASKS</h1>
+</div>
+<div style = 'margin-top:30px;' class = 'about-wrapper'>
+    <div class="container-tasks">
+        <div id="newtask">
+            <input type="text" placeholder="Add Tasks">
+            <button id="push">Add</button>
+        </div>    
+    </div>
+</div>
+<div class = 'current-tasks-wrapper'>
+<div class = 'current-tasks' id="tasks">
+    <div class="task">
+        <span id="taskname">
+           Add Navbar with Logo, Home, About, etc.
+        </span>
+        <button class="delete">
+            X
+        </button>
+    </div>
+    <div class="task">
+        <span id="taskname">
+            Make sure all styles are responsive to various viewports
+        </span>
+        <button class="delete">
+            X
+        </button>
+    </div>
+    <div class="task">
+        <span id="taskname">
+           Use some sort of mapping library to show users nearby urbex attractions
+        </span>
+        <button class="delete">
+            X
+        </button>
+    </div>
+    
+</div>
+</div>
+<div style = 'width: 100%; height: 300px; font-size: 2rem; text-align:center; margin-top:100px;'>
+More to come :)</div>
+  <script src="scripts/main.js"></script>
+  </body>
+</html>
